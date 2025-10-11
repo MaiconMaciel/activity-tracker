@@ -1,11 +1,9 @@
-# criar a tabela do dia
+# transform data
 
 import pandas as pd
 import datetime
 
-
 df = pd.read_csv("./logs/raw_log.csv", encoding="utf-16")
-
 
 def create_log():
   grouped = df.groupby('Date')
@@ -21,15 +19,11 @@ def create_log():
       entrada_final = group.loc[group['Id']==6005, 'TimeCreated'].min()
       saida_final   = group.loc[group['Id']==6006, 'TimeCreated'].max()
 
-      
-      
-
       #lista com horarios do dia
       lista = []
       for index, line in group.iterrows():
          lista.append(line["TimeCreated"])
       lista.sort()
-      #print(f'lista={lista}')
 
       #calcular tempo
       tempo_total_dia = pd.Timedelta(0)
@@ -54,6 +48,3 @@ def create_log():
   df_log.to_csv("./logs/log.csv",  index=False, encoding="utf-8")
       
 create_log()
-    
-
-#mover dados para o log - data - entrada mais cedo - saida mais tarde - soma de horas totais do dia - somente uma linha por dia
