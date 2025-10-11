@@ -1,2 +1,66 @@
-# activity-tracker
-Tracking my uptime for fun
+# Productivity Tracker - Maicon Maciel
+
+Monitoramento de produtividade diária através do registro de logins e logouts no computador.  
+Gera métricas de tempo ativo, número de sessões e visualizações em gráficos.
+
+## Tecnologias
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
+  <img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Airflow"/>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+</p>
+
+---
+
+## Descrição
+
+Este projeto registra automaticamente os horários de login e logout do usuário no computador, calcula o tempo total ativo por dia e gera visualizações gráficas que ajudam a monitorar a produtividade.  
+Os gráficos são atualizados automaticamente pelo script Python sempre que o tracker roda e faz commit no repositório.
+
+---
+
+## Gráficos
+
+### Heatmap de atividade
+<p align="center">
+  <img src="./graphs/activity_heatmap.png" alt="Heatmap de atividade"/>
+</p>
+
+### Atividade últimos 30 dias
+<p align="center">
+  <img src="./graphs/activity_last30.png" alt="Atividade últimos 30 dias"/>
+</p>
+
+---
+
+## Descrição técnica
+
+**Estrutura do projeto:**
+
+    productivity_tracker/
+    │
+    ├─ scripts/
+    │ ├─ data_load.py # Faz o commit dos gráficos diariamente
+    │ ├─ tracker.py # Coleta logs do Windows
+    │ ├─ data_handler.py # Processa dados e gera CSV
+    │ └─ graph.py # Gera gráficos de produtividade
+    │
+    ├─ logs/ # Armazena CSVs e logs diários
+    │ └─ raw_log.csv # Dados Brutos
+    │ └─ log.csv # # Dados prontos para visualização
+    │
+    ├─ graphs/ # Armazena gráficos gerados
+    │ ├─ activity_heatmap.png
+    │ └─ activity_last30.png
+    │
+    ├─ dockerfile # Inicialização do Container Docker
+    ├─ main.py # Script principal ou integração com Airflow
+    ├─ README.md # Este arquivo
+    └─ requirements.txt # Requisitos para rodar o projeto
+
+
+- **Badges:** Docker, Airflow, Python  
+- **Gráficos:** atualizados automaticamente via script  
+- **Logs:** CSVs contendo sessões diárias (entrada, saída, tempo total)  
+- **Execução:** o script principal pode rodar isoladamente ou via Airflow para automatizar commits diários.

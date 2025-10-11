@@ -38,7 +38,7 @@ plt.xlabel("Semana do ano")
 plt.ylabel("Dia da semana")
 plt.text(pivot.shape[1]-0.5, -0.8, f"Média Global: {media_global:.2f}h", color="white", fontsize=9, ha="right")
 plt.tight_layout()
-plt.savefig("activity_heatmap.png", dpi=300, bbox_inches="tight")
+plt.savefig("./graphs/activity_heatmap.png", dpi=300, bbox_inches="tight")
 plt.close()
 
 # barras
@@ -64,5 +64,5 @@ ax.grid(True, linestyle="-", linewidth=0.5, alpha=0.75)
 ax.legend(frameon=False, loc="upper left", fontsize=9, labelcolor="#CCCCCC")
 
 plt.tight_layout()
-plt.savefig("activity_last30.png", dpi=300, bbox_inches="tight")
+plt.savefig("./graphs/activity_last30.png", dpi=300, bbox_inches="tight")
 plt.close()
