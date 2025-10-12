@@ -12,3 +12,5 @@ from scripts.data_extract import get_data
 from scripts.data_transform import create_log
 from scripts.data_vis import create_graphs
 from scripts.data_load import git_commit_push
+
+# test a f*cking commit
