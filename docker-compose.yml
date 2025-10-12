@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  productivity-tracker:
+    container_name: productivity-tracker
+    image: productivity-tracker:latest
+    volumes:
+      - ./dags:/app/dags
+      - ./logs:/app/logs
+      - ./graphs:/app/graphs
+      - ./requirements.txt:/app/requirements.txt
+      - ~/.ssh:/root/.ssh
+    environment:
+      - AIRFLOW_HOME=/app/airflow
+      - PYTHONUNBUFFERED=1
+      - TZ=America/Sao_Paulo
+
+    ports:
+      - "5000:8080"
+    command: ["airflow", "standalone"]

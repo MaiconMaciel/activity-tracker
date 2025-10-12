@@ -1,0 +1,29 @@
+# --- Airflow ---
+# Logs e banco local
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Arquivos temporários do Airflow
+airflow/unittests.cfg
+airflow/*.pid
+
+# Pastas de cache do Python
+__pycache__/
+*.pyc
+
+# --- Docker ---
+# Volumes, imagens e arquivos temporários
+*.pid
+*.log
+
+# --- Sistema ---
+.env
+*.sqlite
+*.db
+
+# --- IDE ---
+.vscode/
+.idea/
+*.code-workspace

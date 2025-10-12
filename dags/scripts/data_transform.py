@@ -1,9 +1,8 @@
 # transform data
 
 import pandas as pd
-import datetime
 
-df = pd.read_csv("./logs/raw_log.csv", encoding="utf-16")
+df = pd.read_csv("../logs/raw_log.csv", encoding="utf-16")
 
 def create_log():
   grouped = df.groupby('Date')
@@ -45,6 +44,5 @@ def create_log():
 
   df_log = pd.DataFrame(dia)
 
-  df_log.to_csv("./logs/log.csv",  index=False, encoding="utf-8")
-      
-create_log()
+  df_log.to_csv("../logs/log.csv",  index=False, encoding="utf-8")
+  

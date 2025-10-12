@@ -1,1 +1,0 @@
-# fazer o cmmit usando o readme do readme_gen
