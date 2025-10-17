@@ -1,3 +1,5 @@
 pandas
 matplotlib
-seaborn
+apache-airflow-client
+gitpython
+seaborn 

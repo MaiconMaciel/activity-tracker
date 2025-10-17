@@ -1,6 +1,8 @@
-import subprocess
+
 
 def git_commit_push(commit_message="Atualização automática do tracker"):
+    import subprocess
+
     try:
         # Adiciona todas as alterações
         subprocess.run(["git", "add", "."], check=True)
@@ -15,5 +17,3 @@ def git_commit_push(commit_message="Atualização automática do tracker"):
     except subprocess.CalledProcessError as e:
         print("❌ Erro ao executar git:", e)
 
-if __name__ == "__main__":
-    git_commit_push()

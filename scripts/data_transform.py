@@ -1,10 +1,11 @@
 # transform data
 
-import pandas as pd
 
-df = pd.read_csv("../logs/raw_log.csv", encoding="utf-16")
 
 def create_log():
+  import pandas as pd
+
+  df = pd.read_csv("../logs/raw_log.csv", encoding="utf-16")
   grouped = df.groupby('Date')
   group_size = grouped.size()
   dia = []
@@ -44,5 +45,5 @@ def create_log():
 
   df_log = pd.DataFrame(dia)
 
-  df_log.to_csv("../logs/log.csv",  index=False, encoding="utf-8")
+  df_log.to_csv("/opt/airflow/logs/log.csv",  index=False, encoding="utf-8")
   
