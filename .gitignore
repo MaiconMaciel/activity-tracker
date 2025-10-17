@@ -5,25 +5,41 @@ airflow/airflow.db
 airflow/airflow.cfg
 airflow/webserver_config.py
 
-# Arquivos temporários do Airflow
+# Arquivos temporários e de teste do Airflow
 airflow/unittests.cfg
 airflow/*.pid
 
-# Pastas de cache do Python
+# --- Python ---
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Ambientes virtuais
+venv/
+.env/
+.venv/
+env/
 
 # --- Docker ---
-# Volumes, imagens e arquivos temporários
 *.pid
 *.log
+*.tmp
 
-# --- Sistema ---
-.env
+# --- Banco de dados e cache ---
 *.sqlite
 *.db
 
-# --- IDE ---
+# --- Configs locais ---
+.env
+*.local
+
+# --- IDEs ---
 .vscode/
 .idea/
 *.code-workspace
+
+# --- Sistema / OS ---
+.DS_Store
+Thumbs.db
