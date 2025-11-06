@@ -5,4 +5,5 @@ from scripts import data_vis
 from scripts import data_load
 
 
-def runActivityTracker()
+def runActivityTracker():
+  pass

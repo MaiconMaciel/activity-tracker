@@ -57,7 +57,6 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
     │ ├─ activity_heatmap.png
     │ └─ activity_last30.png
     │
-    ├─ dockerfile # Inicialização do Container Docker
     ├─ main.py # Script principal ou integração com Airflow
     ├─ README.md # Este arquivo
     └─ requirements.txt # Requisitos para rodar o projeto
