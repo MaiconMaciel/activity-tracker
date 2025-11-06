@@ -1,14 +1,3 @@
-# --- Airflow ---
-# Logs e banco local
-airflow/logs/
-airflow/airflow.db
-airflow/airflow.cfg
-airflow/webserver_config.py
-
-# Arquivos temporários e de teste do Airflow
-airflow/unittests.cfg
-airflow/*.pid
-
 # --- Python ---
 __pycache__/
 *.py[cod]

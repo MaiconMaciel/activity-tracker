@@ -19,7 +19,7 @@ def create_graphs():
         "grid.color": "#222222",
     })
 
-    df = pd.read_csv("/opt/airflow/logs/raw_log.csv")
+    df = pd.read_csv("logs/raw_log.csv")
 
     df["horas_totais"] = pd.to_timedelta(df["horas_totais"]).dt.total_seconds() / 3600
     df["data"] = pd.to_datetime(df["data"])
@@ -42,7 +42,7 @@ def create_graphs():
     plt.ylabel("Dia da semana")
     plt.text(pivot.shape[1]-0.5, -0.8, f"Média Global: {media_global:.2f}h", color="white", fontsize=9, ha="right")
     plt.tight_layout()
-    plt.savefig("opt/airflow/graphs/activity_heatmap.png", dpi=300, bbox_inches="tight")
+    plt.savefig("graphs/activity_heatmap.png", dpi=300, bbox_inches="tight")
     plt.close()
 
     # barras
@@ -68,5 +68,5 @@ def create_graphs():
     ax.legend(frameon=False, loc="upper left", fontsize=9, labelcolor="#CCCCCC")
 
     plt.tight_layout()
-    plt.savefig("opt/airflow/graphs/activity_last30.png", dpi=300, bbox_inches="tight")
+    plt.savefig("graphs/activity_last30.png", dpi=300, bbox_inches="tight")
     plt.close()
