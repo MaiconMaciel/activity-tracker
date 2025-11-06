@@ -6,4 +6,8 @@ from scripts import data_load
 
 
 def runActivityTracker():
+  data_extract()
+  data_transform()
+  data_vis()
+  data_load()
   pass

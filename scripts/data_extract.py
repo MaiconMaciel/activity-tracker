@@ -28,3 +28,4 @@ def get_data():
     df['Date'] = df["TimeCreated"].dt.date
 
     df.to_csv(csv_path, encoding="utf-16", index=False)
+    print("Extract concluido")

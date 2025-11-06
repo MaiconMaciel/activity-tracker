@@ -14,3 +14,4 @@ def git_commit_push(commit_message="Atualização automática do tracker"):
     except subprocess.CalledProcessError as e:
         print("Erro ao executar git:", e)
 
+git_commit_push()
