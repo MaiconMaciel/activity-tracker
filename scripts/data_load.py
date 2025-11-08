@@ -6,14 +6,12 @@ def git_commit_push(commit_message="Atualização automática do tracker"):
     import subprocess
 
     try:
-        print('Oi')
         subprocess.run(["git", "add", "."], check=True)
         subprocess.run(["git", "commit", "-m", commit_message], check=True)
         subprocess.run(["git", "push"], check=True)     
 
     except subprocess.CalledProcessError as e:
         print("Erro git:", e)
-
     else:
         # log simples se push ocorrer sem problemas
         path = "./logs/git.csv"
