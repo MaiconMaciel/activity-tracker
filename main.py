@@ -12,24 +12,23 @@ def runActivityTracker():
     print(f"Erro na extração de dados: {e}")
   else:
     print("Extração concluida")
-
-  try:
-    create_log()
-  except Exception as e:
-    print(f"Erro no create log/transform: {e}")
-  else:
-    print("Transform concluido")
-  try:
-    create_graphs()
-  except Exception as e:
-    print(f"Erro na visualização: {e}")
-  else:
-    print("Criação de Graficos concluido")
-  try:
-    git_commit_push()
-  except Exception as e:
-    print(f"Erro no Load/Push: {e}")
-  else:
-    print("Load/Push concluido")
+    try:
+      create_log()
+    except Exception as e:
+      print(f"Erro no create log/transform: {e}")
+    else:
+      print("Transform concluido")
+      try:
+        create_graphs()
+      except Exception as e:
+        print(f"Erro na visualização: {e}")
+      else:
+        print("Criação de Graficos concluido")
+        try:
+          git_commit_push()
+        except Exception as e:
+          print(f"Erro no Load/Push: {e}")
+        else:
+          print("Load/Push concluido")
 
 runActivityTracker()

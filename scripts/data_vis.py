@@ -19,7 +19,7 @@ def create_graphs():
         "grid.color": "#222222",
     })
 
-    df = pd.read_csv("logs/raw_log.csv")
+    df = pd.read_csv("logs/log.csv")
 
     df["horas_totais"] = pd.to_timedelta(df["horas_totais"]).dt.total_seconds() / 3600
     df["data"] = pd.to_datetime(df["data"])

@@ -5,7 +5,7 @@ from io import StringIO
 
 def get_data():
 
-    csv_path = "/opt/airflow/logs/raw_log.csv"
+    csv_path = "./logs/raw_log.csv"
 
     command = (
         'Get-WinEvent -LogName System '
