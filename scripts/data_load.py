@@ -18,7 +18,7 @@ def git_commit_push(commit_message="Atualização automática do tracker"):
         #log de push - com data e hora ? só pra ter sla
         df = pd.read_csv("./logs/git.csv")
 
-        date = datetime.now(ZoneInfo="America/Sao_Paulo")
+        date = date.now(ZoneInfo="America/Sao_Paulo")
         push = True 
 
         df.append({
