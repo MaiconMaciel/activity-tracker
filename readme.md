@@ -6,7 +6,6 @@ Gera métricas de tempo ativo, número de sessões e visualizações em gráfico
 ## Tecnologias
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Airflow"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
   <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white" alt="Matplotlib"/>
@@ -61,7 +60,7 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
     └─ requirements.txt # Requisitos para rodar o projeto
 
 
-- **Badges:** Docker, Airflow, Python  
+- **Badges:** Python, Pandas, Matplotlib
 - **Gráficos:** atualizados automaticamente via script  
 - **Logs:** CSVs contendo sessões diárias (entrada, saída, tempo total)  
 - **Execução:** o script principal pode rodar isoladamente ou via Airflow para automatizar commits diários.
