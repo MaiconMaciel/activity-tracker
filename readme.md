@@ -1,68 +1,48 @@
-# Productivity Tracker - Maicon Maciel
+<div align="center">
 
-Monitoramento de produtividade diária através do registro de logins e logouts no computador.  
-Gera métricas de tempo ativo, número de sessões e visualizações em gráficos.
+## 👋 Olá! Eu sou o Maicon Maciel  
+Estudante de Ciência da Computação | Foco em Engenharia de Dados e Backend  
+Apaixonado por tecnologia, dados e aprendizado contínuo.
 
-## Tecnologias
+### 🧠 Tecnologias & Ferramentas
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Azure](https://img.shields.io/badge/Microsoft%20Azure-0089D6?style=for-the-badge&logo=microsoftazure&logoColor=white)
+![Databricks](https://img.shields.io/badge/Databricks-FC4C02?style=for-the-badge&logo=databricks&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache%20Spark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"/>
-  <img src="https://img.shields.io/badge/Airflow-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white" alt="Airflow"/>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white" alt="Matplotlib"/>
-</p>
+### 🎓 Certificações & Badges
+- Microsoft Certified: Azure Data Fundamentals (DP-900)
+- AWS Introduction to Generative AI
+- AWS Machine Learning Foundations Badge
+- EF SET (Proficiência em inglês) Nível C1
 
+![Maicon's GitHub Stats](https://github-readme-stats.vercel.app/api?username=maiconmaciel&show_icons=true&theme=tokyonight)
+<br>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=maiconmaciel&layout=compact&theme=tokyonight)
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin)](https://linkedin.com/in/maiconmaciel)
 
-## Descrição
-
-Este projeto registra automaticamente os horários de login e logout do usuário no computador, calcula o tempo total ativo por dia e gera visualizações gráficas que ajudam a monitorar a produtividade.  
-Os gráficos são atualizados automaticamente pelo script Python sempre que o tracker roda e faz commit no repositório.
-
----
-
-## Gráficos
-
-### Heatmap de atividade
-<p align="center">
-  <img src="./graphs/activity_heatmap.png" alt="Heatmap de atividade"/>
-</p>
-
-### Atividade últimos 30 dias
-<p align="center">
-  <img src="./graphs/activity_last30.png" alt="Atividade últimos 30 dias"/>
-</p>
-
----
-
-## Descrição técnica
-
-**Estrutura do projeto:**
-
-    productivity_tracker/
-    │
-    ├─ scripts/
-    │ ├─ data_load.py # Faz o commit dos gráficos diariamente
-    │ ├─ tracker.py # Coleta logs do Windows
-    │ ├─ data_handler.py # Processa dados e gera CSV
-    │ └─ graph.py # Gera gráficos de produtividade
-    │
-    ├─ logs/ # Armazena CSVs e logs diários
-    │ └─ raw_log.csv # Dados Brutos
-    │ └─ log.csv # # Dados prontos para visualização
-    │
-    ├─ graphs/ # Armazena gráficos gerados
-    │ ├─ activity_heatmap.png
-    │ └─ activity_last30.png
-    │
-    ├─ main.py # Script principal ou integração com Airflow
-    ├─ README.md # Este arquivo
-    └─ requirements.txt # Requisitos para rodar o projeto
+</div>
 
 
-- **Badges:** Docker, Airflow, Python  
-- **Gráficos:** atualizados automaticamente via script  
-- **Logs:** CSVs contendo sessões diárias (entrada, saída, tempo total)  
-- **Execução:** o script principal pode rodar isoladamente ou via Airflow para automatizar commits diários.
+
+<!-- ### 🚀 Projetos Recentes --!>
+
+
+
+
+<!--
+**MaiconMaciel/MaiconMaciel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+Here are some ideas to get you started:
+
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- 📫 How to reach me: ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+-->
