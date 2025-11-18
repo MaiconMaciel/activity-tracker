@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 import os
 
-def git_commit_push(commit_message="Atualização automática do tracker"):
+def git_commit_push(commit_message="Auto tracker update"):
     import subprocess
 
     try:
