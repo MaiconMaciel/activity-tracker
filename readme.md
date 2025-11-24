@@ -9,6 +9,8 @@ Gera métricas de tempo ativo, número de sessões e visualizações em gráfico
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
   <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white" alt="Matplotlib"/>
+  <img src="https://img.shields.io/badge/Seaborn-2C4E7A?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn"/>
+  
 </p>
 
 
@@ -30,7 +32,7 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
 
 ### Atividade últimos 30 dias
 <p align="center">
-  <img src="./graphs/activity_last30.png" alt="Heatmap de atividade"/>
+  <img src="./graphs/activity_last30.png" alt="Bar de atividade"/>
 </p>
 
 **Estrutura do projeto:**
