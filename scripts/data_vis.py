@@ -36,7 +36,7 @@ def create_graphs():
     pivot = df.pivot_table(index="dia_semana", columns="semana", values="horas_totais", aggfunc="mean", observed=False)
 
     plt.figure(figsize=(10, 4), dpi=200)
-    sns.heatmap(pivot, cmap="rocket_r", linewidths=0.4, cbar_kws={'label': 'Horas'})
+    sns.heatmap(pivot, cmap="flare", linewidths=0.4, cbar_kws={'label': 'Horas'}, annot=False)
     plt.title("Mapa de calor - Horas por dia da semana", fontsize=13, color="white", pad=10)
     plt.xlabel("Semana do ano")
     plt.ylabel("Dia da semana")
