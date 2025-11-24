@@ -27,12 +27,12 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
 
 ### Heatmap de atividade
 <p align="center">
-  <img src="./graphs/activity_heatmap.png" alt="Heatmap de atividade"/>
+  <img src="graphs/activity_heatmap.png" alt="Heatmap de atividade"/>
 </p>
 
 ### Atividade últimos 30 dias
 <p align="center">
-  <img src="./graphs/activity_last30.png" alt="Bar de atividade"/>
+  <img src="graphs\activity_last30.png" alt="Bar de atividade"/>
 </p>
 
 **Estrutura do projeto:**
