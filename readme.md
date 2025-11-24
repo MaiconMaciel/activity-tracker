@@ -32,7 +32,7 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
 
 ### Atividade últimos 30 dias
 <p align="center">
-  <img src="https://github.com/MaiconMaciel/activity-tracker/blob/main/graphs/activity_last30.png" alt="Bar de atividade"/>
+  <img src="https://github.com/MaiconMaciel/activity-tracker/raw/main/graphs/activity_last30.png" alt="Bar de atividade"/>
 </p>
 
 **Estrutura do projeto:**
