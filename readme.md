@@ -1,24 +1,20 @@
 # Productivity Tracker - Maicon Maciel
 
-Monitoramento de produtividade diária através do registro de logins e logouts no computador.  
+Monitoramento de produtividade diária através do registro de logins e logouts no computador. 
 Gera métricas de tempo ativo, número de sessões e visualizações em gráficos.
 
 ## Tecnologias
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
-  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/Seaborn-2C4E7A?style=for-the-badge&logo=python&logoColor=white" alt="Seaborn"/>
-  
-</p>
-
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) 
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) 
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=plotly&logoColor=white) 
+![Seaborn](https://img.shields.io/badge/Seaborn-2C4E7A?style=for-the-badge&logo=python&logoColor=white) 
 
 ---
 
 ## Descrição
 
-Este projeto registra automaticamente os horários de login e logout do usuário no computador, calcula o tempo total ativo por dia e gera visualizações gráficas que ajudam a monitorar a produtividade.  
+Este projeto registra automaticamente os horários de login e logout do usuário no computador, calcula o tempo total ativo por dia e gera visualizações gráficas que ajudam a monitorar a produtividade. 
 Os gráficos são atualizados automaticamente pelo script Python sempre que o tracker roda e faz commit no repositório.
 
 ---
@@ -26,15 +22,12 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
 ## Gráficos
 
 ### Heatmap de atividade
-<p align="center">
-  <img src="graphs/activity_heatmap.png" alt="Heatmap de atividade"/>
-</p>
+
+![Heatmap de atividade](graphs/activity_heatmap.png)
 
 ### Atividade últimos 30 dias
-<p align="center">
-  <img src="graphs/activity_last30.png" alt="Bar de atividade"/>
-</p>
 
+![Bar de atividade](graphs/activity_last30.png)
 
 **Estrutura do projeto:**
 
@@ -60,6 +53,6 @@ Os gráficos são atualizados automaticamente pelo script Python sempre que o tr
 
 
 - **Badges:** Python, Pandas, Matplotlib
-- **Gráficos:** atualizados automaticamente via script  
-- **Logs:** CSVs contendo sessões diárias (entrada, saída, tempo total)  
+- **Gráficos:** atualizados automaticamente via script 
+- **Logs:** CSVs contendo sessões diárias (entrada, saída, tempo total) 
 - **Execução:** o script principal pode rodar isoladamente ou via Airflow para automatizar commits diários.
